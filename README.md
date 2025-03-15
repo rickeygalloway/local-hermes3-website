@@ -2,11 +2,6 @@
 
 A simple local website built with Flask, Ollama, and VS Code on Windows. It uses the `hermes3:8b` model to answer questions typed into a webpage, all running offline on your machine.
 
-## Prerequisites
-- Windows 10 or 11
-- Internet connection (for initial downloads)
-- ~5 GB free disk space (for the model)
-
 ## Setup Steps
 1. **Install VS Code**
    - Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
