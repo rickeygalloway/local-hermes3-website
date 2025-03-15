@@ -26,3 +26,5 @@ EXPOSE 5000 11434
 
 # Command to run Ollama in the background and then start Flask
 CMD ["sh", "-c", "ollama serve & sleep 5 && python app.py"]
+
+# CMD ["sh", "-c", "ollama serve & sleep 5 && python app_new.py"]

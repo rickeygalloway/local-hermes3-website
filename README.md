@@ -33,77 +33,6 @@ A simple local website built with Flask, Ollama, and VS Code on Windows. It uses
      pip install flask requests
      ```
 
-## Adding the Code
-1. **Create Project Folder**
-   - Make a folder (e.g., `local-website`) anywhere on your computer.
-   - Open it in VS Code: `File > Open Folder`.
-
-2. **Add Files**
-   - In VS Code Explorer (Ctrl+Shift+E), create:
-     - `app.py`
-     - A `templates` folder
-     - Inside `templates`, create `index.html`
-
-3. **Copy Code**
-   - **app.py**:
-     ```python
-     from flask import Flask, render_template, request
-     import requests
-
-     app = Flask(__name__)
-
-     OLLAMA_API = "http://localhost:11434/api/generate"
-
-     @app.route("/", methods=["GET", "POST"])
-     def home():
-         response_text = ""
-         user_input = ""
-         if request.method == "POST":
-             user_input = request.form.get("user_input", "")
-             if user_input:
-                 payload = {
-                     "model": "hermes3:8b",
-                     "prompt": user_input,
-                     "stream": False
-                 }
-                 try:
-                     response = requests.post(OLLAMA_API, json=payload)
-                     response.raise_for_status()
-                     response_text = response.json().get("response", "No response")
-                 except requests.exceptions.RequestException as e:
-                     response_text = f"Error: {str(e)}"
-         return render_template("index.html", response=response_text, user_input=user_input)
-
-     if __name__ == "__main__":
-         app.run(debug=True)
-     ```
-   - **templates/index.html**:
-     ```html
-     <!DOCTYPE html>
-     <html lang="en">
-     <head>
-         <meta charset="UTF-8">
-         <title>Local Hermes3:8B Website</title>
-         <style>
-             body { font-family: Arial, sans-serif; margin: 20px; }
-             textarea { width: 100%; max-width: 500px; height: 100px; }
-             .response { margin-top: 20px; }
-         </style>
-     </head>
-     <body>
-         <h1>Ask Hermes3:8B</h1>
-         <form method="POST">
-             <textarea name="user_input" placeholder="Type your question here...">{{ user_input }}</textarea>
-             <br>
-             <button type="submit">Submit</button>
-         </form>
-         <div class="response">
-             <h3>Response:</h3>
-             <p>{{ response }}</p>
-         </div>
-     </body>
-     </html>
-     ```
 
 ## Running the Website
 1. **Start Ollama**
@@ -120,7 +49,7 @@ A simple local website built with Flask, Ollama, and VS Code on Windows. It uses
      ```
    - Start the app:
      ```
-     python app.py
+     python app.py or app_new.py
      ```
 
 3. **Access the Website**
