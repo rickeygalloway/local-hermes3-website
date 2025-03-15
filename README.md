@@ -2,6 +2,11 @@
 
 A simple local website built with Flask, Ollama, and VS Code on Windows. It uses the `hermes3:8b` model to answer questions typed into a webpage, all running offline on your machine.
 
+## Prerequisites
+- Windows 10 or 11
+- Internet connection (for initial downloads)
+- ~5 GB free disk space (for the model)
+
 ## Setup Steps
 1. **Install VS Code**
    - Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
@@ -122,7 +127,30 @@ A simple local website built with Flask, Ollama, and VS Code on Windows. It uses
    - Open your browser and go to `http://127.0.0.1:5000`.
    - Type a question in the text box and click "Submit" to see the response.
 
+## Running with Docker
+1. **Install Docker**
+   - Download and install Docker Desktop from [docker.com](https://www.docker.com/products/docker-desktop/).
+   - Verify: Run `docker --version` in a terminal.
+
+2. **Build the Docker Image**
+   - Navigate to your project folder:
+     ```
+     cd path\to\local-website
+     ```
+   - Build the image:
+     ```
+     docker build -t local-hermes3-website .
+     ```
+
+3. **Run the Container**
+   - Start the container:
+     ```
+     docker run -p 5000:5000 -p 11434:11434 local-hermes3-website
+     ```
+   - Access the website at `http://localhost:5000` in your browser.
+
 ## Troubleshooting
 - **404 Error**: Ensure Ollama is running (`ollama run hermes3:8b`) and the model is listed (`ollama list`).
-- **Port Conflict**: If `5000` is busy, edit `app.py` to use `app.run(debug=True, port=5001)`.
+- **Port Conflict**: If `5000` is busy, edit `app.py` to use `app.run(debug=True, port=5001)` or adjust Docker port mapping (e.g., `-p 5001:5000`).
 - **No Response**: Check Flask terminal for errors and verify Ollama is on `http://localhost:11434`.
+- **Docker Issues**: Ensure internet access during `docker build` and sufficient disk space (~5 GB).
