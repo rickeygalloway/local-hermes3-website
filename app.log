@@ -1,0 +1,22 @@
+2025-03-18 03:08:10,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.68.110:5000
+2025-03-18 03:08:10,570 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 03:08:10,571 - INFO -  * Restarting with stat
+2025-03-18 03:08:10,978 - WARNING -  * Debugger is active!
+2025-03-18 03:08:10,979 - INFO -  * Debugger PIN: 873-306-918
+2025-03-18 03:08:23,848 - INFO - 127.0.0.1 - - [18/Mar/2025 03:08:23] "GET / HTTP/1.1" 200 -
+2025-03-18 03:08:36,775 - INFO - 127.0.0.1 - - [18/Mar/2025 03:08:36] "[31m[1mGET /stream?model=hermes3:8b&user_input=give+me+a+joke%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:08:40,511 - INFO - 127.0.0.1 - - [18/Mar/2025 03:08:40] "[31m[1mGET /stream?model=hermes3:8b&user_input=give+me+a+joke%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:08:52,745 - INFO - 127.0.0.1 - - [18/Mar/2025 03:08:52] "[31m[1mGET /stream?model=hermes3:8b&user_input=give+me+a+joke%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:04,471 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:04] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:08,269 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:08] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:08,993 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:08] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:09,328 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:09] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:09,565 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:09] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:09,796 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:09] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:10,144 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:10] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:09:51,814 - INFO - 127.0.0.1 - - [18/Mar/2025 03:09:51] "[31m[1mGET /stream?model=NousResearch/Hermes-3-Llama-3.1-8B&user_input=3%2B3%0A HTTP/1.1[0m" 405 -
+2025-03-18 03:10:21,441 - INFO -  * Detected change in 'C:\\Users\\rgall\\Documents\\AI\\LocalLLM\\app.py', reloading
+2025-03-18 03:10:21,479 - INFO -  * Restarting with stat
