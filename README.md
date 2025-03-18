@@ -3,26 +3,23 @@
 A simple local website built with Flask, Ollama, and VS Code on Windows. It uses the `hermes3:8b` model to answer questions typed into a webpage, all running offline on your machine.
 
 ## Setup Steps
-1. **Install VS Code**
-   - Download and install from [code.visualstudio.com](https://code.visualstudio.com/).
-
-2. **Install Python**
+1. **Install Python**
    - Download Python 3.11 or 3.12 from [python.org](https://www.python.org/downloads/windows/).
    - Check "Add Python to PATH" during installation.
    - Verify: Open Command Prompt and run `python --version`.
 
-3. **Install Ollama**
+2. **Install Ollama**
    - Download from [ollama.com](https://ollama.com/download) and run the installer.
    - Verify: In Command Prompt, run `ollama --version`.
 
-4. **Download the Hermes3:8B Model**
+3. **Download the Hermes3:8B Model**
    - In Command Prompt, run:
      ```
      ollama pull hermes3:8b
      ```
    - Confirm it’s downloaded: `ollama list`.
 
-5. **Install Flask**
+4. **Install Flask**
    - In Command Prompt, run:
      ```
      pip install flask requests
