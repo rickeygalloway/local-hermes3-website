@@ -25,7 +25,15 @@ A simple local website built with Flask, Ollama, and VS Code on Windows. It uses
      pip install flask requests
      ```
 
-
+## Downloading the Model
+1. **Download the Hermes3:8B Model**
+   - In Command Prompt, run:
+     ```
+     ollama pull hermes3:8b
+     ```
+   - This downloads the `hermes3:8b` model (~4.5 GB) to your local machine.
+   - Confirm it’s downloaded: Run `ollama list` and check for `hermes3:8b` in the list.
+   
 ## Running the Website
 1. **Start Ollama**
    - In Command Prompt, run:
